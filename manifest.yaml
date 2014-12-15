@@ -1,0 +1,20 @@
+aspect_ratio: '16:9'
+canvas_main: core.js
+cover_art: ''
+deploy_files:
+- app.tzjs
+- core.js
+- mapping_table.json
+deployed: Never
+engine_version: '0.28'
+flash_main: ''
+has_notifications: false
+is_multiplayer: false
+is_temp: false
+mapping_table: mapping_table.json
+modified: 21:22 | 15/12/2014
+path: C:\Users\pkopach\Documents\Eman
+plugin_main: app.tzjs
+slug: cooltitle
+title: CoolTitle
+title_logo: ''
