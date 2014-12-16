@@ -7,6 +7,8 @@ Q.scene('level1', function(stage) {
 
     var player = stage.insert(new Q.Player());
 
+    var enemy = stage.insert(new Q.Enemy());
+
     stage.add('viewport').follow(player);
 
 });

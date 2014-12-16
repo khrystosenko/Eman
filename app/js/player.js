@@ -10,19 +10,19 @@ Q.Sprite.extend('Player', {
 
         this.add('2d');
 
-        // this.on('hit.sprite', function(collision) {
+        this.on('hit.sprite', function(collision) {
 
-        //     if (collision.obj.isA('Tower')) {
+            if (collision.obj.isA('Enemy')) {
 
-        //         Q.stageScene('endGame', 1, {
-        //             label: 'You Won!'
-        //         });
+                Q.stageScene('endGame', 1, {
+                    label: 'You Died!'
+                });
 
-        //         this.destroy();
+                this.destroy();
 
-        //     }
+            }
 
-        // });
+        });
 
     },
 

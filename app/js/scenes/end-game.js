@@ -4,7 +4,7 @@ Q.scene('endGame', function(stage) {
 
         x: Q.width / 2,
         y: Q.height / 2,
-        fill: 'rgba(0,0,0,0.5)'
+        fill: 'rgba(255,255,255,0.5)'
 
     }));
 
@@ -12,7 +12,7 @@ Q.scene('endGame', function(stage) {
 
         x: 0,
         y: 0,
-        fill: '#CCCCCC',
+        fill: '#888',
         label: 'Play Again'
 
     }));
