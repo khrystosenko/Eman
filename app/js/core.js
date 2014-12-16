@@ -5,6 +5,8 @@ var Q = Quintus()
 
 Q.gravityY = 0;
 
+var PLAYER_SPEED = 200;
+
 Q.Sprite.extend('Player', {
 
     init: function(p) {
@@ -37,11 +39,11 @@ Q.Sprite.extend('Player', {
 
         if (Q.inputs['up']) {
 
-            this.p.vy = -200;
+            this.p.vy = -PLAYER_SPEED;
 
         } else if (Q.inputs['down']) {
 
-            this.p.vy = 200;
+            this.p.vy = PLAYER_SPEED;
 
         } else {
 
@@ -51,11 +53,11 @@ Q.Sprite.extend('Player', {
 
         if (Q.inputs['left']) {
 
-            this.p.vx = -200;
+            this.p.vx = -PLAYER_SPEED;
 
         } else if (Q.inputs['right']) {
 
-            this.p.vx = 200;
+            this.p.vx = PLAYER_SPEED;
 
         } else {
 
