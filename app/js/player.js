@@ -5,7 +5,7 @@ Q.Sprite.extend('Player', {
         this._super(p, {
             sheet: 'player',
             x: 400,
-            y: 300
+            y: 700
         });
 
         this.add('2d');
