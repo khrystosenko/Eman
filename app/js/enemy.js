@@ -10,20 +10,6 @@ Q.Sprite.extend('Enemy', {
 
         this.add('2d');
 
-        // this.on('hit.sprite', function(collision) {
-
-        //     if (collision.obj.isA('Tower')) {
-
-        //         Q.stageScene('endGame', 1, {
-        //             label: 'You Won!'
-        //         });
-
-        //         this.destroy();
-
-        //     }
-
-        // });
-
     },
 
     step: function(dt) {
