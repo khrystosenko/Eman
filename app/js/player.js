@@ -1,14 +1,10 @@
 Q.Sprite.extend('Player', {
 
-    init: function(p) {
+    init: function(props) {
 
-        this._super(p, {
-            sheet: 'player',
-            x: 400,
-            y: 700
-        });
+        props.sheet = 'Actor';
 
-        this.add('2d');
+        this._super(props);
 
         this.on('hit.sprite', function(collision) {
 
@@ -24,37 +20,7 @@ Q.Sprite.extend('Player', {
 
         });
 
-    },
-
-    step: function(dt) {
-
-        if (Q.inputs['up']) {
-
-            this.p.vy = -PLAYER_SPEED;
-
-        } else if (Q.inputs['down']) {
-
-            this.p.vy = PLAYER_SPEED;
-
-        } else {
-
-            this.p.vy = 0;
-
-        }
-
-        if (Q.inputs['left']) {
-
-            this.p.vx = -PLAYER_SPEED;
-
-        } else if (Q.inputs['right']) {
-
-            this.p.vx = PLAYER_SPEED;
-
-        } else {
-
-            this.p.vx = 0;
-
-        }
+        this.add('stepControls');
 
     }
 

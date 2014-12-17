@@ -1,30 +1,13 @@
 var Q = Quintus()
-    .include('Sprites, Scenes, Input, 2D, Touch, UI')
+    .include('Sprites, Scenes, Input, 2D, Touch, UI, TMX')
     .setup('render-area', {
         maximize: true
     })
     .controls().touch();
 
-Q.gravityY = 0;
-
 var PLAYER_SPEED = 200;
 
-Q.load('actor.png, level.json, tiles.png, enemy.png', function() {
-
-    Q.sheet('tiles', 'tiles.png', {
-        tilew: 16,
-        tileh: 16
-    });
-
-    Q.sheet('player', 'actor.png', {
-        tilew: 32,
-        tileh: 32
-    });
-
-    Q.sheet('enemy', 'enemy.png', {
-        tilew: 32,
-        tileh: 32
-    });
+Q.loadTMX('level1.tmx', function() {
 
     Q.stageScene('level1');
 

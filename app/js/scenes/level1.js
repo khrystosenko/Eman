@@ -1,14 +1,12 @@
 Q.scene('level1', function(stage) {
 
-    stage.collisionLayer(new Q.TileLayer({
-        dataAsset: 'level.json',
-        sheet: 'tiles'
-    }));
+    // stage.collisionLayer(new Q.TileLayer({
+    //     dataAsset: 'level.json',
+    //     sheet: 'tiles'
+    // }));
 
-    var player = stage.insert(new Q.Player());
+    Q.stageTMX('level1.tmx', stage);
 
-    var enemy = stage.insert(new Q.Enemy());
-
-    stage.add('viewport').follow(player);
+    stage.add('viewport').follow(Q('Player').first());
 
 });
