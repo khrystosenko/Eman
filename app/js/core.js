@@ -5,8 +5,6 @@ var Q = Quintus()
     })
     .controls().touch();
 
-var PLAYER_SPEED = 200;
-
 Q.loadTMX('level1.tmx', function() {
 
     Q.stageScene('level1');

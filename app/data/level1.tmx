@@ -10019,6 +10019,13 @@
   </data>
  </layer>
  <objectgroup name="Object Layer 1">
-  <object gid="3" x="889.754" y="665.909" rotation="-73.3757"/>
+  <properties>
+   <property name="collision" value="true"/>
+  </properties>
+  <object name="Actor" type="0" gid="3" x="1173" y="619">
+   <properties>
+    <property name="Class" value="Player"/>
+   </properties>
+  </object>
  </objectgroup>
 </map>
